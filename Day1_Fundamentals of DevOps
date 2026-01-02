@@ -1,0 +1,21 @@
+1. What is devOps?
+
+Process of improving the application  delivery ,  by ensuring there is  proper automation , quality , continous monitoring & Continous Testing 
+#############################################
+2. Why DevOps ? 
+
+Before 10 years 
+Sys Admin - He was Creating Server on VMware/ OpenStack 
+Build and Release Engineer - He Deploys the application on the server that the developer has built 
+Server Admin - used to create app servers 
+
+for delivering all these , so many roles were involved , application delivery was taking longer time due to manual effort. 
+
+To improve the above process of delivery , devops has come to place 
+#############################################
+
+Introduce yourself - 
+
+m working as a DevOps for past 3 Years , Before that I was working as Linux Admin
+
+I take care of automation , ensuring quality in application , setup continous monitroing 
