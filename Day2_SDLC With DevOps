@@ -1,0 +1,12 @@
+SDLC - Software Development Lifecycle 
+It is a process/standard  that is followed in s/w industry  to Design ,
+ Develop and test high quality product 
+
+SDLC involves - Planning , Defining ,  Designing , Building , Testing & Deployment [ PDDBTD] 
+
+DEVOPS engineer is responsible for building , Testing and Deployment stage 
+ Building Phase - Building / Developing the s/w. S/w engineers write the code and stores the  code in Git  
+ Testing - The code that is stored in git will be deployed on a test/ stage server 
+ Deployment -  push the code to prod 
+
+Devops fastens the process 
