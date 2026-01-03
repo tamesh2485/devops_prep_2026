@@ -1,0 +1,46 @@
+To build server on AWS - We can use AWS CLI , AWS CDK 
+
+To build server on Azure - We have Azure Resource Manager 
+
+For hybrid - We have Terraform 
+
+
+## Install AWS CLI 
+Link - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+goto Security credentials - Create Access Key 
+
+$ aws --version
+aws-cli/1.44.11 Python/3.12.6 Windows/11 botocore/1.42.21
+
+$ aws configure 
+
+
+$ aws ec2 describe-instances \
+  --region ap-southeast-2 \
+  --filters "Name=instance-state-name,Values=running"
+
+$ aws  s3 ls 
+
+
+## Create ec2 instance - 
+aws ec2 run-instances \
+    --image-id ami-0b8d527345fdace59 \
+    --count 1 \
+    --instance-type t3.micro \
+    --key-name sydneykey \
+    --security-group-ids sg-0fb3da71edfdad7c0 \
+    --subnet-id subnet-08262b0106c2d2d6f
+
+## List / Describe 
+aws ec2 describe-instances --region ap-southeast-2
+aws ec2 describe-instances \
+  --region ap-southeast-2 \
+  --query 'Reservations[].Instances[].{
+    InstanceId: InstanceId,
+    State: State.Name,
+    Type: InstanceType,
+    PrivateIP: PrivateIpAddress,
+    PublicIP: PublicIpAddress,
+    Name: Tags[?Key==`Name`].Value | [0]
+  }' \
+  --output table
