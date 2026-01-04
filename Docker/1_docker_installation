@@ -1,0 +1,10 @@
+Docker Installation on Ubuntu - 
+https://docs.docker.com/engine/install/ubuntu/#installation-methods 
+
+### Process to Tag and push an image to Repo ###
+docker login [ tamesh2485 || Sidmeetssimmi@123 ]
+docker pull nginx
+docker images
+docker image tag nginx:latest tamesh2485/nginx:v2
+docker images
+docker push tamesh2485/nginx:v2
